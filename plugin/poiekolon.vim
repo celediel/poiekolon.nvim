@@ -25,6 +25,9 @@ if exists('g:loaded_poiekolon') | finish | endif
 let s:save_cpo = &cpo
 set cpo&vim
 
+" most of this function is from is0n/jaq-nvim because I can't vimscript at all
+" https://github.com/is0n/jaq-nvim/blob/master/plugin/jaq-nvim.lua
+" https://github.com/is0n/jaq-nvim/blob/master/LICENSE
 function! ColonCompletion(lead, cmd, cursor)
     let valid_args = ['default', 'add', 'force', 'toggle', 'add_newline', 'force_newline', 'toggle_newline']
     let l = len(a:lead) - 1
