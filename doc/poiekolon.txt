@@ -1,0 +1,26 @@
+*poiekolon.txt* A very configurable neovim plugin to add or toggle a char at the end of a line. *poiekolon*
+
+CONTENTS                                                    *poiekolon-contents*
+
+1. Commands       |poiekolon-commands|
+2. Mappings       |poiekolon-mappings|
+
+COMMANDS                                                    *poiekolon-commands*
+
+:Poiekolon {function} {char}                                        *:Poiekolon*
+
+Runs {function} with char {char}.
+
+Functions are:
+>
+    do_default              -> Invoke configured default action with <char> (default: add_char)
+    add_char                -> Add <char> to the end of the line unless it exists.
+    force_add_char          -> Add <char> to the end of the line even if it exists.
+    toggle_char             -> Toggle <char> at the end of the line.
+    add_char_newline        -> Add <char> to the end of the line unless it exists, and add a newline after.
+    force_add_char_newline  -> Add <char> to the end of the line even if it exists, and add a newline after.
+    toggle_char_newline     -> Toggle <char> at the end of the line, and add a newline after.
+<
+MAPPINGS                                                    *poiekolon-mappings*
+
+See README.md for configuration in lua.

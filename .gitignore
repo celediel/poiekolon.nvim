@@ -1,0 +1,5 @@
+/plugin/reload.vim
+/readme_gen
+.md-inc.toml
+.vimrc.lua
+*.backup
