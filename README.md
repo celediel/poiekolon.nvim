@@ -1,6 +1,6 @@
 # Poiekolon
 
-_ποίηκώλον_ - from Classical Greek _ποιέω poiéo_ - to make, and _κῶλον kôlon_ - a part or, in rhetoric and
+_ποιέκώλον_ - from Classical Greek _ποιέω poiéo_ - to make, and _κῶλον kôlon_ - a part or, in rhetoric and
 poetry, a section of a complete thought or passage.
 
 A very configurable neovim plugin to add or toggle a char at the end of a line.
