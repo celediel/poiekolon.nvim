@@ -46,7 +46,7 @@ require("poiekolon").setup({ default_mode = "toggle" })
 For users of init.vim, wrap all of that in a lua block like so:
 
 ```vim
-lua <<< EOF
+lua << EOF
 require("poiekolon").setup({ default_mode = "toggle" })
 EOF
 ```
