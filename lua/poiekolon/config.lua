@@ -22,17 +22,8 @@ M.default = {
 
 M.current = {}
 
-local function update_conf(conf, with)
-    for k, v in pairs(with) do
-        if conf[k] == nil then
-            conf[k] = v
-        end
-    end
-end
-
 M.setup = function(conf)
-    conf = conf or M.current
-    update_conf(conf, M.default)
+    conf = vim.tbl_extend("keep", conf or M.current, M.default)
 
     -- setup autokeys
     if conf.autokeys and type(conf.autokeys) == "table" then
